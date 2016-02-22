@@ -15,12 +15,12 @@
     <textarea class="txtArea" name="name" rows="3" cols="40" placeholder="Type message"></textarea>
     <div class="status">Status: <span>Idle</span></div>
   </div>
-  //dependency
+
   <script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
   <script>
 
   (function(){
-    var getNode = function() {
+    var getNode = function(s) {
       return document.querySelector(s);
     };
     var textarea = getNode(".txtArea"),
@@ -31,11 +31,27 @@
       var socket = io.connect("http://127.0.0.1:8080");
     } catch(e) {
       //warn user
+      console.log("Niar...");
 
     }
 
     if(socket!== undefined){
       console.log("ok!");
+      //listen for keydown
+      textarea.addEventListener("keydown", function(event){
+        var self = this,
+            name = chatName.value;
+
+        //send message typing enter
+        if (event.which === 13 && event.shiftKey === false) {
+          console.log("send");
+          
+
+        }
+
+
+
+      });
     }
 
 

@@ -9,8 +9,9 @@
   <div class="chat">
     <input type="text" class="chatName" placeholder="Enter your name">
     <div class="messages">
-      <div class="msg"><span>Alex:</span> Hello There!</div>
-      <div class="msg"><span>Maria:</span> Aloha!</div>
+      <!-- <div class="msg"><span>Alex:</span> Hello There!</div>
+      <div class="msg"><span>Maria:</span> Aloha!</div> -->
+
     </div>
     <textarea class="txtArea" name="name" rows="3" cols="40" placeholder="Type message"></textarea>
     <div class="status">Status: <span>Idle</span></div>
@@ -40,14 +41,16 @@
       //listen for keydown
       textarea.addEventListener("keydown", function(event){
         var self = this,
-            name = chatName.value;
+            name = chatname.value;
 
         //send message typing enter
         if (event.which === 13 && event.shiftKey === false) {
-          console.log("send");
-          
-
+          //send the data
+          socket.emit("input", {name:name, message: self.value});
+          event.preventDefault();
         }
+
+
 
 
 

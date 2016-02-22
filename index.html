@@ -17,5 +17,30 @@
   </div>
   //dependency
   <script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
+  <script>
+
+  (function(){
+    var getNode = function() {
+      return document.querySelector(s);
+    };
+    var textarea = getNode(".txtArea"),
+        chatname = getNode(".chatName");
+
+    //connect
+    try {
+      var socket = io.connect("http://127.0.0.1:8080");
+    } catch(e) {
+      //warn user
+
+    }
+
+    if(socket!== undefined){
+      console.log("ok!");
+    }
+
+
+
+  })();
+  </script>
 </body>
 </html>

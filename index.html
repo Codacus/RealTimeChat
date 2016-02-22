@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>RealTimeChat</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <div class="chat">
     <input type="text" class="chatName" placeholder="Enter your name">
@@ -14,52 +16,78 @@
 
     </div>
     <textarea class="txtArea" name="name" rows="3" cols="40" placeholder="Type message"></textarea>
-    <div class="status">Status: <span>Idle</span></div>
+    <div class="status">Status:
+      <span>Idle</span>
+    </div>
   </div>
 
   <script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
   <script>
+    (function() {
+      var getNode = function(s) {
+        return document.querySelector(s);
+      };
+      var textarea = getNode(".txtArea"),
+        chatname = getNode(".chatName"),
+        status = getNode(".status span"),
+        statusDefault = status.textContent;
 
-  (function(){
-    var getNode = function(s) {
-      return document.querySelector(s);
-    };
-    var textarea = getNode(".txtArea"),
-        chatname = getNode(".chatName");
+      //console.log(statusDefault);
 
-    //connect
-    try {
-      var socket = io.connect("http://127.0.0.1:8080");
-    } catch(e) {
-      //warn user
-      console.log("Niar...");
+      var setStatus = function(s) {
+        status.textContent = s;
+        if (s !== statusDefault) {
+          var delay = setTimeout(function() {
+            setStatus(statusDefault);
+            clearInterval(delay);
+          }, 3000);
+        }
+      };
 
-    }
+      //setStatus("testing");
 
-    if(socket!== undefined){
-      console.log("ok!");
-      //listen for keydown
-      textarea.addEventListener("keydown", function(event){
-        var self = this,
+      //connect
+      try {
+        var socket = io.connect("http://127.0.0.1:8080");
+      } catch (e) {
+        //warn user
+        console.log("Niar...");
+
+      }
+
+      if (socket !== undefined) {
+        console.log("ok!");
+
+        //Listen for status
+        socket.on("status", function(data) {
+          setStatus((typeof data === "object") ? data.message : data);
+          if(data.clear === true) {
+            textarea.value="";
+          }
+
+        });
+
+        //listen for keydown
+        textarea.addEventListener("keydown", function(event) {
+          var self = this,
             name = chatname.value;
 
-        //send message typing enter
-        if (event.which === 13 && event.shiftKey === false) {
-          //send the data
-          socket.emit("input", {name:name, message: self.value});
-          event.preventDefault();
-        }
+          //send message typing enter
+          if (event.which === 13 && event.shiftKey === false) {
+            //send the data
+            socket.emit("input", {
+              name: name,
+              message: self.value
+            });
+            event.preventDefault();
+          }
+        }); //eventListener
+      } //socket check
 
 
 
-
-
-      });
-    }
-
-
-
-  })();
+    })();
   </script>
 </body>
+
 </html>

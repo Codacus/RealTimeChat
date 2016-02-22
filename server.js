@@ -8,6 +8,11 @@ mongo.connect("mongodb://127.0.0.1/chat", function(err, db){
 
     var col = db.collection("messages");
 
+    //status function
+    var sendStatus = function(s) {
+      socket.emit("status", s);
+    };
+
     console.log("Someone has connected.");
     //Wait for input
     socket.on("input", function(data){
@@ -16,11 +21,11 @@ mongo.connect("mongodb://127.0.0.1/chat", function(err, db){
           whiteSpacePattern = /^\s*$/;
 
           if(whiteSpacePattern.test(name) || whiteSpacePattern.test(message)){
-            console.log("Invalid");
+            sendStatus("Name/Message is required");
           } else {
             //insert into db
             col.insert({name:name, message:message}, function(){
-              console.log("Inserted...");
+              sendStatus({message: "Message sent", clear: true});
             });
 
           }

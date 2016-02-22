@@ -63,10 +63,15 @@
             //loop through data
             for(var j=0; j<data.length; j++){
               var message = document.createElement("div");
+              var colorName = document.createElement("span");
               message.setAttribute("class", "msg");
-              message.textContent = data[j].name + ": " + data[j].message;
+              colorName.textContent = data[j].name;
+              //colorName.setAttribute("color", "#f00");
+              message.textContent =": " + data[j].message;
 
               //append
+              message.appendChild(colorName);
+              message.insertBefore(colorName, message.firstChild);
               messages.appendChild(message);
               messages.insertBefore(message, messages.firstChild);
             }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>InterviewHangouts</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico"/>
+    <!--Stylesheets-->
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./css/buttonLoader.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet"  type="text/css" href="./css/theme/ambiance.css">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/socket.io-1.2.0.js"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-select.min.js"></script>
+    <script src="./js/jquery.buttonLoader.min.js"></script>
+    <script src="./js/jquery.freeow.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+<div class="container-fluid" style="padding-left:0px">
+     <div class="page-header col-md-12" style="background-color:#4D4D4D;border:#4D4D4D;margin-top:0px;margin-bottom:0px;  padding:20px 10px 20px 10px;box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.4);margin-right:15px">
+        <div class="col-md-4">
+            <h3 class="h3" style="color:white;margin:0"><span class="glyphicon glyphicon-phone-alt" style="color:grey"></span> InterviewHangouts</h3>   
+        </div>
+        <div class="col-md-5 form-inline">
+            <label style="color:white">Share link to invite:&nbsp&nbsp</label><input type="text" class="form-control" id="roompath" readonly>
+        </div>
+        <span class="user_span pull-right" ></span>
+    </div>
+
+    <div class="row" style="margin-right:0px">
+        <div class="col-md-6 editor-div" style="padding-top:20px;padding-left:30px">
+
+         <!-- Chat area -->
+        <div class="col-md-4" id="video-container" style="margin-top:20px;padding-top:10px;">
+                
+                <div class="panel-body" style="height:75%;position:relative">
+                    <ul class="chat">
+                    </ul>
+                </div>
+                
+                <div class="panel-footer" style="padding:0px 0px 0px 0px;position:relative; bottom:0;right:0;height:15%;overflow:none;border-radius:0px 0px 0px 0px">
+                    <div  style="position:absolute;top:-50%;z-index:20;margin:0 auto;width:100%;border-top:#ddd; opacity:0.80; color:#337ab7"><span class="typingstatus" style="background-color:#f5f5f5;"></span></div>
+                    <textarea type="text" class="form-control input-sm" placeholder="Type your message here... Press ENTER to send and SHIFT+ENTER to newline." id="chatarea" style="resize:none;height:100%;position:absolute;bottom:0"></textarea>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="col-md-2 user_box" style="background-color:#333;color:white;overflow:auto">
+            <div class="btn-group pull-right" style="padding: 5px 5px 5px 5px;width:100%">
+                <h4 class="h4"> You are Online <i class="fa fa-circle" style="color:green"></i>
+                </h4>
+            </div>
+            
+            <div class="user_list"></div>
+        </div>
+    </div>
+</div>
+
+    <div id="nameModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body text-center" style="background-color: darkslategray;color:white;height:70vh">
+                    <div class="modal-header"><h3 class="h3" style="color: white">Enter Your Name</h3></div>                        
+                
+                    <div class="input-group" style="width:80%;margin:auto; margin-top:50px">
+                        <input type="text" class="form-control username" placeholder="Eg: John Smith" autofocus ><span class="input-group-btn"><button class="btn btn-md btn-success EnterRoom" >Enter room</button></span>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+<div id="freeow" class="freeow freeow-top-right"></div>
+<audio id="sound_chat" ><source src="./assets/beep.mp3" type="audio/mpeg"></audio>
+</body>
+</html>

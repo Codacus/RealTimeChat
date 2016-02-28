@@ -1,7 +1,7 @@
 {
-  "name": “MKChat”,
-  "version": “0.1.0”,
-  "description": “A real time chat project with chatroom support built on nodejs and boostrap.”,
+  "name": "MKChat",
+  "version": "0.1.0",
+  "description": "A real time chat project with chatroom support built on nodejs and boostrap.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,9 +9,6 @@
   "dependencies": {
      "express": "~4.10.2",
     "socket.io": "~1.3.5"
-  },
-  "engines": {
-    "node": "*"
   },
   "repository": {
     "type": "git",

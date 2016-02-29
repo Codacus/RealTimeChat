@@ -1,6 +1,6 @@
 # README #
 
-Project is uploaded on heroku and it will be updated frequently. 
+The project has been uploaded on heroku and it will be updated frequently. 
 
 You can find it here:
 http://cryptic-tor-52060.herokuapp.com/

@@ -3,8 +3,6 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-//For creating Post requests 
-var unirest = require('unirest');
 
 //uncomment below line to use custom peerjs server
 //Peer Server Object

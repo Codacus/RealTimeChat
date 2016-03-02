@@ -4,31 +4,45 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>InterviewHangouts</title>
+    <title>MKChat</title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico"/>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/landing_page.js"></script>
+    <style>
+
+    body{
+        background-color: black;
+    }
+    .h1 {
+        color:white;
+    }
+    .h1 span{
+        color:#5cb85c;
+    }
+    .text-center p {
+        color: white;
+        font-size: 20px;
+    }
+    </style>
 </head>
 
 <body>
 <div class="container-fluid">
     <div class="page-header text-center">
-    <h1 class="h1" ><span class="glyphicon glyphicon-phone-alt"></span> Interview Hangouts</h1>
+    <h1 class="h1" ><span class="fa fa-comment"></span> MKChat</h1>
     </div>
     <div class="row">
         <div class="col-md-12">
-                <div class="text-center" style="background-color: #006666;height:75vh;padding-top:15px">
-                    <h3 class="h3" style="color: white">Enter a link or roomid or <button class="btn btn-md btn-default createNewRoom">Create New Room</button></h3>
-                    <div class="input-group" style="width:50%;margin:auto;margin-top:15px">
-                        <input type="text" class="form-control copyroomurl" placeholder="eg: inteviewhangouts.example.com/XzDWeRqocE or XzDWeRqocE">
+                <div class="text-center" style="background-color:gray;height:75vh;padding-top:15px">
+                <p>Welcome to the world's most advanced real-time chat platform.</p>
+                <p>Start by clicking the button below to create a new chatroom or use your invite code to join the conversation!</p>
+                   <button class="btn btn-md btn-success createNewRoom">New Chat</button>
+                    <h3 class="h3" style="color: white"></h3>
+                    <div class="input-group" style="width:25%;margin:auto;margin-top:15px">
+                        <input type="text" class="form-control copyroomurl" placeholder="Invite code, like Xeo34Xds9R">
                         <span class="input-group-btn">
                               <button class="btn btn-md btn-success RoomUrl">Continue</button>
                         </span>

@@ -2,6 +2,7 @@ $(function(){
 
 	var roomid="";
 
+  //Create a new random, 10-character rooom ID that contains only alphanumeric characters
 	$(".createNewRoom").click(function () {
     	var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
@@ -11,6 +12,7 @@ $(function(){
 		window.location.href = window.location  +roomid;
 	});
 
+  //Check if the given room ID is valid and navigate to the room 
 	$(".RoomUrl").click(function() {
       
       	roomid = $(".copyroomurl").val();

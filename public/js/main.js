@@ -186,7 +186,7 @@ socket.on('user_connect', function(users_array){
   num_users=user_online_array.length -1;
   
   if(num_users ===0)
-    $(".user_list").html("There are no people in this room");
+    $(".user_list").html("There are no people in this room.");
   
   for(var i=0; i<users_array.length;i++){
     if(users_array[i][0] !== user)
@@ -202,6 +202,6 @@ socket.on('user_disconnect', function(disconnected_user){
   num_users--;
   if(num_users === 0){
     $(".user_list").empty();
-    $(".user_list").html("0 person online in this room");
+    $(".user_list").html("There are no people in this room.");
   }
 }); 

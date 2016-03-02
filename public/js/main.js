@@ -186,11 +186,11 @@ socket.on('user_connect', function(users_array){
   num_users=user_online_array.length -1;
   
   if(num_users ===0)
-    $(".user_list").html("0 person online in this room");
+    $(".user_list").html("There are no people in this room");
   
   for(var i=0; i<users_array.length;i++){
     if(users_array[i][0] !== user)
-      $(".user_list").append('<div class="btn-group pull-right rm_'+users_array[i][0]+'_div " style="padding: 5px 5px 5px 5px;width:100%"><button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown"><i class="fa fa-circle pull-left" style="color:green;"></i> '+users_array[i][0]+' <span class="caret"></span></button><ul class="dropdown-menu" role="menu"><li><a class="btn btn-success btn-link " onclick="get_Peer_Id(this);" id="'+users_array[i][0]+'">Start Video-Call </a></li></ul></div>');
+      $(".user_list").append('<div class="btn-group pull-right rm_'+users_array[i][0]+'_div " style="padding: 5px 5px 5px 5px;width:100%"></div>');
   }
 });
 

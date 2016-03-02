@@ -3,7 +3,9 @@
 The project has been uploaded on heroku and it will be updated frequently. 
 
 You can find it here:
-http://cryptic-tor-52060.herokuapp.com/
+http://shielded-coast-20265.herokuapp.com
+
+**DO NOT use HTTPS** as it will break things.
 
 *** How to run ***
 

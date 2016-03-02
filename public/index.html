@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MKChat</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico"/>
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/landing_page.js"></script>
-    <style>
-
-    body{
-        background-color: black;
-    }
-    .h1 {
-        color:white;
-    }
-    .h1 span{
-        color:#5cb85c;
-    }
-    .text-center p {
-        color: white;
-        font-size: 20px;
-    }
-    .footer p{
-        color:white;
-    }
-    </style>
-</head>
-
-<body>
-<div class="container-fluid">
-    <div class="page-header text-center">
-    <h1 class="h1" ><span class="fa fa-comment"></span> MKChat</h1>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-                <div class="text-center" style="background-color:gray;height:75vh;padding-top:15px">
-                <p>Welcome to the world's most advanced real-time chat platform.</p>
-                <p>Start by clicking the button below to create a new chatroom or use your invite code to join the conversation!</p>
-                   <button class="btn btn-md btn-lg btn-success createNewRoom">New Chat</button>
-                    <h3 class="h3" style="color: white"></h3>
-                    <div class="input-group" style="width:35%;margin:auto;margin-top:15px">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MKChat</title>
+        <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/landing_page.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/landing_page.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="page-header text-center">
+            <!-- <span class="fa fa-comment"></span> -->
+                <h1 class="h1" ><img class="logo" src="./assets/favicon.png" alt=""> MKChat</h1>
+            </div>
+            <div class="row main-content text-center">
+                <div class="col-md-12">
+                    <p>Welcome to the world's most advanced real-time chat platform.</p>
+                    <p>Start by clicking the button below to create a new chatroom or use your invite code to join the conversation!</p>
+                    <button class="btn btn-md btn-lg btn-success createNewRoom">New Chat</button>
+                    <div class="input-group" >
                         <input type="text" class="form-control copyroomurl" placeholder="Invite code, like Xeo34Xds9R or the URL">
                         <span class="input-group-btn">
-                              <button class="btn btn-md btn-success RoomUrl">Continue</button>
+                            <button class="btn btn-md btn-success RoomUrl">Continue</button>
                         </span>
                     </div>
                 </div>
+            </div>
+            <hr>
+            <div class="row info-content">
+            <h2 class="info-title">Why choose MKChat?</h2>
+                <div class="col-md-2">
+                    <img class="priv-img img-responsive center-block" src="./assets/simplicity-pointer.png" alt="simplicity">
+                </div>
+                <div class="col-md-4">
+                    <h2>Simplicity</h2>
+                    <p>On the click of a button you can start using our service. No registration, no fees, no strings attached.</p>
+                    <p>To invite your friends, just give them the link to the chatroom you created. Or send them your room's unique ID.</p>
+                </div>
+                <div class="col-md-2">
+                    <img class="priv-img img-responsive center-block" src="./assets/privacy.png" alt="privacy">
+                </div>
+                <div class="col-md-4">
+                    <h2>Privacy</h2>
+                    <p>We don't log your messages or stash them in a database. Your messages are gone once your chatroom is gone.</p>
+                    <p>This way you can say anything you want to your friends without worrying about prying eyes.</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<footer class="footer navbar-bottom text-center">
-<span>&copy; 2016 Codacus, All rights reserved.</span>
-</footer>
+    <footer class="footer navbar-bottom text-center">
+        <span>&copy; 2016 Codacus, All rights reserved.</span>
+    </footer>
 </body>
 </html>

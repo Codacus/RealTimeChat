@@ -61,7 +61,7 @@
 }
 
 .user_box{
-    background-color:#FFE1FF;
+    background-color:#lightgreen;
     color:auto;
     overflow:auto;
 }
@@ -72,7 +72,7 @@
 }
 
 .h4{
-    color:green;
+    /*color:green;*/
 }
 
 #roompath{

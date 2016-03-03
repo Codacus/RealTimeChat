@@ -21,6 +21,13 @@
     width:36px;
 }
 
+.panel-body
+{
+    overflow-y: scroll;
+    height:75%;
+    /*position:relative;*/
+}
+
 .panel-footer{
     padding:0px 0px 0px 0px;
     position:relative; 
@@ -54,7 +61,7 @@
 }
 
 .user_box{
-   /* background-color:#333;*/
+    background-color:#330033;
     color:auto;
     overflow:auto;
 }
@@ -110,13 +117,6 @@
     color: #777777;
 }
 
-.panel-body
-{
-    overflow-y: scroll;
-    height:auto;
-    /*position:relative;*/
-}
-
 .modal-body{
     background-color:green;
     color:white;
@@ -131,7 +131,7 @@
     width:75%;
     margin:auto; 
     margin-top:50px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 /*

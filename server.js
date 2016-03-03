@@ -112,7 +112,7 @@ io.on('connection', function(socket) {
     socket.on('usertyping', function(user) {
         socket.broadcast.to(socket.room).emit('usertyping', user);
     });
-
+});
     http.listen((process.env.PORT || 5000), function() {
         console.log('Server running');
     });

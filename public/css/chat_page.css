@@ -35,7 +35,13 @@
 }
 .chat-area {
     margin-right:0px;
-    height:500px;
+    height:100%;
+}
+.chat-container {
+    height:100%;
+}
+.userlist-container{
+    height:100%;
 }
 
 

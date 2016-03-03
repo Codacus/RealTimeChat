@@ -2,6 +2,7 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+
 .container-fluid{
     padding-left: 0px;
 }
@@ -34,7 +35,10 @@
 }
 .chat-area {
     margin-right:0px;
+    height:100%;
 }
+
+
 #my-id {
   font-weight: bold;
 }

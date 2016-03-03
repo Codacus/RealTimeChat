@@ -3,9 +3,9 @@
 The project has been uploaded on heroku and it will be updated frequently. 
 
 You can find it here:
-http://shielded-coast-20265.herokuapp.com
+https://shielded-coast-20265.herokuapp.com
 
-**DO NOT use HTTPS** as it will break things.
+HTTPS is now usable since all depedencies are taken from https CDNs. 
 
 *** How to run ***
 

@@ -16,68 +16,89 @@
     <body>
 
         <div class="jumbotron bgCol">
-            
+            <div class="background-image"></div>
             
           <div class="container jumbocontent">
             <div class="row">
-                <h1 class="h1" ><img class="logo" src="./assets/favicon.png" alt=""> MKChat</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-12"><p>Welcome to the world's most advanced real-time chat platform.</p>
-                <p>Start by clicking the button below to create a new chatroom or use your invite code to join the conversation!</p></div>
+                <div class="text-center">
+                    <h1 id="mkchat" ><img class="logo" src="./assets/favicon.png" alt=""> MKChat</h1>
+                </div>
                 
             </div>
             <div class="row">
+                <div class="col-md-12"><p class="jumbo-p">Welcome to the world's most advanced real-time chat platform.</p>
+                <p class="jumbo-p">Start by clicking the button below to create a new chatroom or use your invite code to join the conversation!</p></div>
+                
+            </div>
+            <div class="row text-center">
                 <div class="col-md-12">
-
-
-                    
-                    <button class="btn btn-md btn-lg btn-success createNewRoom">New Chat</button>
+                    <button class="btn btn-md btn-lg btn-success createNewRoom">NEW CHATROOM</button>
                     
                 </div>
             </div>
-            <div class="row">
-                <div class="input-group" >
+            <div class="row text-center">
+                
+                    <div class="input-group invite" >
                         <input type="text" class="form-control copyroomurl" placeholder="Invite code, like Xeo34Xds9R or the URL">
                         <span class="input-group-btn">
-                            <button class="btn btn-md btn-success RoomUrl">Continue</button>
+                            <button class="btn btn-lg btn-success RoomUrl enter">ENTER</button>
                         </span>
                     </div>
+                
+                
             </div>
             
           </div>
-        </div>
+        </div> 
 
 
         <div class="container">
             
             <div class="row main-content text-center">
-                
-            </div>
+                <h2 class="info-title">WHY CHOOSE MKChat?</h2>
             <hr>
-            <h2 class="info-title">Why choose MKChat?</h2>
             <div class="row info-content">
                 <div class="col-md-2">
-                    <img class="priv-img img-responsive center-block" src="./assets/simplicity-pointer.png" alt="simplicity">
+                    <i class="fa fa-magic" id="magic"></i>
+                    <!-- <img class="priv-img img-responsive center-block" src="./assets/simplicity-pointer.png" alt="simplicity"> -->
                 </div>
                 <div class="col-md-4">
-                    <h2>Simplicity</h2>
+                    <h2>SIMPLICITY</h2>
                     <p>With the click of a button you can start using our service. No registration, no fees, no strings attached.</p>
                     <p>To invite your friends, just give them the link to the chatroom you created. Or send them your room's unique ID.</p>
                 </div>
                 <div class="col-md-2">
-                    <img class="priv-img img-responsive center-block" src="./assets/privacy.png" alt="privacy">
+                    <i class="fa fa-lock" id="lock"></i>
+                    <!-- <img class="priv-img img-responsive center-block" src="./assets/privacy.png" alt="privacy"> -->
                 </div>
                 <div class="col-md-4">
-                    <h2>Privacy</h2>
+                    <h2>PRIVACY</h2>
                     <p>We don't log your messages or stash them in a database. Your messages are gone once your chatroom is gone.</p>
                     <p>Now you can say anything you want to your friends without worrying about prying eyes.</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <footer class="footer navbar-bottom text-center">
-        <span>&copy; 2016 Codacus, All rights reserved.</span>
-    </footer>
+            
+            </div>
+            <hr>
+
+        <footer class="footer navbar-bottom text-center">
+                        <span>&copy; 2016 Codacus, All rights reserved.</span>
+        </footer>
+            
+        </div> <!-- end container -->
+
+
+
+
+       <!--  <div class="row">
+                <div class="col-md-12">
+                    <footer class="footer navbar-bottom text-center">
+                        <span>&copy; 2016 Codacus, All rights reserved.</span>
+                    </footer>
+                </div>
+            
+            </div> -->
+    
+    
 </body>
 </html>

@@ -1,11 +1,23 @@
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-weight: bold;
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+
 body{
-background-color: #FDFFFC;
+	font-family: "Montserrat", sans-serif;
+	background-color: #FDFFFC;
 }
-.h1 {
-color:black;
-}
-.main-content {
-/*background-color:gray;*/
+
+/*.main-content {
+
 height:200px;
 padding-top:15px;
 margin-bottom: 40px;
@@ -36,21 +48,136 @@ width: 36px;
 .priv-img{
 height: 128px;
 margin-top: 35px;
-}
+}*/
 
 
 /* Maria Changes*/
-input {
-	background-color: rgba(255,255,255,0.5) !important;
+
+.bgCol{
+	position:relative;
+	padding:15px;
 }
 
-.jumbotron {
+/*.jumbotron {
 	background: url(../assets/jumbo_pic.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index:1;
+	-webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+
+}*/
+
+.background-image{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:url(../assets/jumbo_pic.jpg) no-repeat top;
+	background-size:cover;
+	z-index:1;
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);	
 }
 
 
 
+.jumbocontent {
+
+	position:relative;
+	z-index:2;
+	color:#4A584D;
+}
+.jumbo-p {
+	text-align: center;
+	 line-height: 80%;
+	 color:#4E6252;
+}
+
+#mkchat{
+	font-size: 65px;
+}
+
+.logo {
+height: 65px;
+width: 65px;
+}
+
+.createNewRoom {
+	margin:20px;
+	background-color: rgba(0,153,76,0.8) !important;
+	/*border:4px solid rgba(0,153,76,0.7);*/
+}
+
+
+.invite{
+	margin:20px;
+	height: 50px;
+	width: 450px !important;
+	margin:20px auto;
+	
+}
+
+.invite input {
+	height: 50px;
+	background-color: rgba(255,255,255,0.4) !important;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.enter {
+	height: 50px;
+	width: 100px !important;
+	background-color: rgba(0,153,76,0.8) !important;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 2px rgba(255, 250, 204, 1);
+  border: 1px solid rgba(255, 250, 204, 1);
+}
+
+.main-content {
+	margin: 30px;
+	color:#4A584D;
+}
+
+
+#magic {
+	color:#4EA96F;
+	font-size: 150px;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+#lock {
+	color:#4EA96F;
+	font-size: 160px;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+
+
+hr{
+	margin-bottom: 20px;
+}
+
+
+footer {
+	color:#4A584D;
+	margin-top:60px;
+	height: 50px;
+	font-size: 15px;
+	line-height: 20px;
+
+
+}

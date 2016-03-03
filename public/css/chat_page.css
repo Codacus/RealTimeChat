@@ -24,7 +24,7 @@
 .panel-body
 {
     overflow-y: scroll;
-    height:80%;
+    height:90%;
     /*position:relative;*/
 }
 
@@ -33,7 +33,7 @@
     position:relative; 
     bottom:0;
     right:0;
-    height:20%;
+    height:10%;
     overflow:none;
     border-radius:0px 0px 0px 0px;
 }

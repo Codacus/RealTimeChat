@@ -1,4 +1,7 @@
-﻿
+﻿body{
+    background-color: lightgray;
+}
+
 .page-header {
     margin-top:0px;
     margin-bottom:0px;  
@@ -6,11 +9,10 @@
 }
 
 .form-inline label{
-    color:white;
+
 }
 
 .page-header h3{
-    color:white;
     margin:0;
 }
 
@@ -51,13 +53,13 @@
     bottom:0;
 }
 
-.user-box{
+.user_box{
     background-color:#333;
     color:white;
     overflow:auto;
 }
 
-.user-box .btn-group{
+.user_box .btn-group{
     padding: 5px 5px 5px 5px;
     width:100%;
 }
@@ -67,7 +69,7 @@
 }
 
 #roompath{
-    width:auto;
+    width:75%;
 }
 
 .chat-area {

@@ -52,14 +52,12 @@ body{
   filter: blur(7px);	
 }
 
-
-
 .jumbocontent {
-
 	position:relative;
 	z-index:2;
 	color:#333300;
 }
+
 .jumbo-p {
 	text-align: center;
 	 line-height: 80%;
@@ -80,7 +78,6 @@ width: 65px;
 	background-color: rgba(0,153,76,0.8) !important;
 	/*border:4px solid rgba(0,153,76,0.7);*/
 }
-
 
 .invite{
 	margin:20px;
@@ -113,7 +110,6 @@ input[type=text]:focus {
 	color:#4A584D;
 }
 
-
 #magic {
 	color:#4EA96F;
 	font-size: 150px;
@@ -128,12 +124,9 @@ input[type=text]:focus {
 	margin-top: 30px;
 }
 
-
-
 hr{
 	margin-bottom: 20px;
 }
-
 
 footer {
 	color:#4A584D;
@@ -141,6 +134,4 @@ footer {
 	height: 50px;
 	font-size: 15px;
 	line-height: 20px;
-
-
 }

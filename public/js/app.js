@@ -51,7 +51,7 @@ $(function(){
     user = user.trim();
     user = user.replace(/\s\s+/g, ' ');
     
-    //Validiate name removing extra spaces and check for length and special characters.
+    //Validate name removing extra spaces and check for length and special characters.
     if(user!="" && !(/[^A-Za-z0-9 ]/.test(user)) && user.length>3){ 
       $("#nameModal").modal('hide');
       $(".user_span").html("<h5 class='h5' style='color:white'>Hello <b><u>" + user + "</u></b></h4>" );
@@ -103,13 +103,6 @@ user_online_array = "";
 //current user
 user="";
 
-//user's socket.io server side socket.id to be used as peerjs chat id
-my_socket_id ="";
-
-ispresentationrunning = false;
-//Compatiability Shim
-navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-
 //Number of users online in current room
 var num_users =0;
 var usertypingtimer = null;
@@ -144,7 +137,7 @@ socket.on("usertyping", function(typinguser){
 });
 
 
-//Receive Chat messges from other users in the room.
+//Receive Chat messages from other users in the room.
 socket.on('chatmsg', function(msg){
   var d = new Date();
   clearTimeout(usertypingtimer); //cancel the previous timer.

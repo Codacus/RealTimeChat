@@ -14,26 +14,8 @@ app.use(function(req, res, next) {
 //Store user data in variable room
 var rooms = [];
 
-//uncomment below line to use custom peer server
-//Initialise peer server
-//app.use('/api', ExpressPeerServer(http, options));
-
-
 app.use(express.static(__dirname + '/public/'));
 
-//Get Room id from url
-app.get('/:roomName', function(req, res) {
-
-    activeChat = req.params.roomName;
-    res.sendFile(__dirname + '/public/chat.html');
-
-});
-app.get('/:roomName/', function(req, res) {
-
-    activeChat = req.params.roomName;
-    res.sendFile(__dirname + '/public/chat.html');
-
-});
 //Socket.io on connection event
 
 io.on('connection', function(socket) {
@@ -116,9 +98,6 @@ io.on('connection', function(socket) {
         //Send user_connect msg to other users in room.
         io.sockets.in(socket.room).emit('user_connect', rooms[socket.room].user_array);
 
-        //Send the current user it's server socket.id to use as peerjs id. Ensures uniqueness on custom server.
-        io.to(socket.id).emit('socket_id', socket.id);
-
         console.log(socket.user + " connected.");
     });
 
@@ -133,13 +112,6 @@ io.on('connection', function(socket) {
     socket.on('usertyping', function(user) {
         socket.broadcast.to(socket.room).emit('usertyping', user);
     });
-
-    //Recieve text user is writing in editor broadcast to other users.
-    socket.on('Edit_Request', function(msg) {
-        socket.broadcast.to(socket.room).emit('Edit_Response', msg);
-    });
-
-});
 
     http.listen((process.env.PORT || 5000), function() {
         console.log('Server running');

@@ -32,7 +32,9 @@
 #roompath{
     width:100%;
 }
-
+.chat-area {
+    margin-right:0px;
+}
 #my-id {
   font-weight: bold;
 }

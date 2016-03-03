@@ -6,17 +6,6 @@ $(function(){
   $('#nameModal').on('shown.bs.modal', function() {
         $(this).find('[autofocus]').focus();
   });
- 
-
-
-  
-  // Adjust Height of window depending on viewport height.
-  
-  var req_height= $(window).height() - $(".page-header").outerHeight(true);
-
-  $(".user_box").css('height',req_height-3);
-
-  $("#video-container").css('height',req_height-23);
 
  
   /*
@@ -24,14 +13,6 @@ $(function(){
     Different Event Handlers Code.
   */
 
-  //Handler for window resizing
-  $( window ).resize(function() {
-    
-    var req_height= $(window).height() - $(".page-header").outerHeight(true);
-
-    $(".user_box").css('height',req_height);
-    $("#video-container").css('height',req_height-20);
-  });
 
   // Handler for chat send on pressing enter key.
 
@@ -122,7 +103,7 @@ user_online_array = "";
 //current user
 user="";
 
-//user's socket.io server side socket.id to be used as peerjs video chat id
+//user's socket.io server side socket.id to be used as peerjs chat id
 my_socket_id ="";
 
 ispresentationrunning = false;

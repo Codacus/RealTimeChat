@@ -24,24 +24,24 @@
 .panel-body
 {
     overflow-y: scroll;
-    height:90%;
+    height:92%;
     /*position:relative;*/
 }
 
 .panel-footer{
     padding:0px 0px 0px 0px;
-    position:relative; 
+    /*position:relative; */
     bottom:0;
     right:0;
-    height:10%;
+    height:8%;
     overflow:none;
     border-radius:0px 0px 0px 0px;
 }
 
 .panel-footer div {
-    position:absolute;
-    top:-50%;
-    z-index:20;
+    /*position:absolute;*/
+    /*top:-50%;*/
+    /*z-index:20;*/
     margin:0 auto;
     width:100%;
     border-top:#ddd; 
@@ -50,7 +50,7 @@
 }
 
 .panel-footer div span{
-    background-color:#f5f5f5;
+    /*background-color:#f5f5f5;*/
 }
 
 .input-sm {

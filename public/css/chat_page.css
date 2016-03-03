@@ -40,8 +40,8 @@
 
 .panel-footer div {
     /*position:absolute;*/
-    /*top:-50%;*/
-    /*z-index:20;*/
+    top:-50%;
+    z-index:20;
     margin:0 auto;
     width:100%;
     border-top:#ddd; 

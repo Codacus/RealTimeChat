@@ -118,7 +118,7 @@
 }
 
 .modal-body{
-    background-color:lightgreen;
+    background-color:green;
     color:white;
     height:auto;
 }
@@ -131,6 +131,7 @@
     width:75%;
     margin:auto; 
     margin-top:50px;
+    padding-bottom: 50px;
 }
 
 /*

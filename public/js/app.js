@@ -54,7 +54,7 @@ $(function(){
     //Validate name removing extra spaces and check for length and special characters.
     if(user!="" && !(/[^A-Za-z0-9 ]/.test(user)) && user.length>3){ 
       $("#nameModal").modal('hide');
-      $(".user_span").html("<h5 class='h5' style='color:white'>Hello <b><u>" + user + "</u></b></h4>" );
+      $(".user_span").html("<h5 class='h5' style='color:auto'>Hello <b><u>" + user + "</u></b></h4>" );
       socket.emit('addToRoom',{'room':myroom, 'user':user});
       $("#roompath").val(window.location);
      

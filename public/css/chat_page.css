@@ -26,7 +26,7 @@
     position:relative; 
     bottom:0;
     right:0;
-    height:15%;
+    height:25%;
     overflow:none;
     border-radius:0px 0px 0px 0px;
 }
@@ -54,7 +54,7 @@
 }
 
 .user_box{
-    background-color:#333;
+   /* background-color:#333;*/
     color:auto;
     overflow:auto;
 }
@@ -113,22 +113,22 @@
 .panel-body
 {
     overflow-y: scroll;
-    height:100%;
-    position:relative;
+    height:auto;
+    /*position:relative;*/
 }
 
 .modal-body{
-    background-color: darkslategray;
+    background-color:lightgreen;
     color:white;
-    height:70vh;
+    height:auto;
 }
 
 .modal-body .h3 {
-    color: white;
+    color: auto;
 }
 
 .modal-body .input-group{
-    width:80%;
+    width:75%;
     margin:auto; 
     margin-top:50px;
 }

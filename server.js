@@ -3,16 +3,6 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-
-//uncomment below line to use custom peerjs server
-//Peer Server Object
-//var ExpressPeerServer = require('peer').ExpressPeerServer;
-
-//uncomment below lines to use custom peerjs server.
-//var options = {
-//    debug: true
-//}
-
 //Enable CORS 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");

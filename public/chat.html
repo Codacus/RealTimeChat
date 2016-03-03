@@ -27,29 +27,24 @@
                 <span class="user_span pull-right" ></span>
             </div>
             <div class="row chat-area">
-                <div class="col-md-3 empty-space">
-                    
-                </div>
+                <div class="col-md-3 empty-space"></div>
                 <div class="col-md-6 chat-container">
-                    <div class="panel-body" style="height:75%;position:relative">
+                    <div class="panel-body">
                         <ul class="chat">
                         </ul>
                     </div>
-                    <div class="panel-footer" style="padding:0px 0px 0px 0px;position:relative; bottom:0;right:0;height:15%;overflow:none;border-radius:0px 0px 0px 0px">
-                        <div  style="position:absolute;top:-50%;z-index:20;margin:0 auto;width:100%;border-top:#ddd; opacity:0.80; color:#337ab7"><span class="typingstatus" style="background-color:#f5f5f5;"></span></div>
-                        <textarea type="text" class="form-control input-sm" placeholder="Type your message here... Press ENTER to send and SHIFT+ENTER to newline." id="chatarea" style="resize:none;height:100%;position:absolute;bottom:0"></textarea>
+                    <div class="panel-footer">
+                        <div  style=""><span class="typingstatus"></span></div>
+                        <textarea type="text" class="form-control input-sm" placeholder="Type your message here... Press ENTER to send and SHIFT+ENTER to newline." id="chatarea"></textarea>
                     </div>
                 </div>
-                <div class="col-md-1 empty-space">
-                    
-                </div>
+                <div class="col-md-1 empty-space"></div>
                 <div class="col-md-2 userlist-container">
-                    <div class="user_box" style="background-color:#333;color:white;overflow:auto">
-                        <div class="btn-group pull-right" style="padding: 5px 5px 5px 5px;width:100%">
-                            <h4 class="h4"> You are Online <i class="glyphicon glyphicon-record" style="color:green"></i>
+                    <div class="user_box">
+                        <div class="btn-group pull-right">
+                            <h4 class="h4"> You are Online <span class="glyphicon glyphicon-record"></span>
                             </h4>
                         </div>
-                        
                         <div class="user_list"></div>
                     </div>
                 </div>
@@ -57,20 +52,18 @@
         </div>
         <div id="nameModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog">
-                <!-- Modal content-->
+                <!-- Login Window-->
                 <div class="modal-content">
-                    <div class="modal-body text-center" style="background-color: darkslategray;color:white;height:70vh">
-                        <div class="modal-header"><h3 class="h3" style="color: white">Enter Your Name</h3></div>
+                    <div class="modal-body text-center">
+                        <div class="modal-header"><h3 class="h3">Enter Your Name</h3></div>
                         
-                        <div class="input-group" style="width:80%;margin:auto; margin-top:50px">
+                        <div class="input-group">
                             <input type="text" class="form-control username" placeholder="Eg: John Smith" autofocus ><span class="input-group-btn"><button class="btn btn-md btn-success EnterRoom" >Enter room</button></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--
-        <div id="freeow" class="freeow freeow-top-right"></div> -->
     <audio id="sound_chat" ><source src="./assets/beep.mp3" type="audio/mpeg"></audio>
 </body>
 </html>

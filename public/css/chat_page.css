@@ -1,20 +1,8 @@
-﻿*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-
-
-.container-fluid{
-    padding-left: 0px;
-}
-
+﻿
 .page-header {
-    background-color:#4D4D4D;
-    border:#4D4D4D;
     margin-top:0px;
     margin-bottom:0px;  
     padding:20px 10px 20px 10px;
-    box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.4);
-    margin-right:15px;
 }
 
 .form-inline label{
@@ -22,7 +10,8 @@
 }
 
 .page-header h3{
-    color:white;margin:0
+    color:white;
+    margin:0;
 }
 
 .logo {
@@ -30,23 +19,63 @@
     width:36px;
 }
 
-#roompath{
+.panel-footer{
+    padding:0px 0px 0px 0px;
+    position:relative; 
+    bottom:0;
+    right:0;
+    height:15%;
+    overflow:none;
+    border-radius:0px 0px 0px 0px;
+}
+
+.panel-footer div {
+    position:absolute;
+    top:-50%;
+    z-index:20;
+    margin:0 auto;
+    width:100%;
+    border-top:#ddd; 
+    opacity:0.80; 
+    color:#337ab7;
+}
+
+.panel-footer div span{
+    background-color:#f5f5f5;
+}
+
+.input-sm {
+    resize:none;
+    height:100%;
+    position:absolute;
+    bottom:0;
+}
+
+.user-box{
+    background-color:#333;
+    color:white;
+    overflow:auto;
+}
+
+.user-box .btn-group{
+    padding: 5px 5px 5px 5px;
     width:100%;
 }
+
+.h4{
+    color:green;
+}
+
+#roompath{
+    width:auto;
+}
+
 .chat-area {
     margin-right:0px;
 }
 
 .chat-area, .chat-container, .userlist-container, .user_box{
     height:600px;
-}
-
-#my-id {
-  font-weight: bold;
-}
-
-body{
-    background-color:#e6f5fc;
 }
 
 .chat
@@ -73,24 +102,36 @@ body{
     margin-right: 60px;
 }
 
-
 .chat li .chat-body p
 {
     margin: 0;
     color: #777777;
 }
 
-.panel .slidedown .glyphicon, .chat .glyphicon
-{
-    /*margin-right: 5px;*/
-}
-
 .panel-body
 {
     overflow-y: scroll;
-    
+    height:100%;
+    position:relative;
 }
 
+.modal-body{
+    background-color: darkslategray;
+    color:white;
+    height:70vh;
+}
+
+.modal-body .h3 {
+    color: white;
+}
+
+.modal-body .input-group{
+    width:80%;
+    margin:auto; 
+    margin-top:50px;
+}
+
+/*
 ::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -107,13 +148,4 @@ body{
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #555;
-}
-
-
-
-
-.btn-sm{
-        border-radius: 0 !important;
-
-
-    }
+}*/

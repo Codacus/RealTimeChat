@@ -14,6 +14,20 @@ app.use(function(req, res, next) {
 //Store user data in variable room
 var rooms = [];
 
+//Get Room id from url
+app.get('/:roomName', function(req, res) {
+
+    activeChat = req.params.roomName;
+    res.sendFile(__dirname + '/public/chat.html');
+
+});
+app.get('/:roomName/', function(req, res) {
+
+    activeChat = req.params.roomName;
+    res.sendFile(__dirname + '/public/chat.html');
+
+});
+
 app.use(express.static(__dirname + '/public/'));
 
 //Socket.io on connection event

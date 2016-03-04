@@ -12,6 +12,8 @@
 body{
     font-family: "Montserrat", sans-serif;
     background-color: #FDFFFC;
+    background:url(../assets/jumbo_pic.jpg) no-repeat fixed top;
+    background-size:cover;
 }
 
 .navbar-default {

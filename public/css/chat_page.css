@@ -25,6 +25,21 @@
     overflow-y: scroll;
     height:92%;
     position:relative;
+    background-color: #fff;
+
+    border:solid 1px #151715;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright:7px;
+    /*-moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;*/
+    -webkit-border-top-left-radius:7px;
+    -webkit-border-top-right-radius:7px;
+    /*-webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;*/
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
 }
 
 .panel-footer{

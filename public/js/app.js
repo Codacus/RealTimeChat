@@ -24,7 +24,7 @@ $(function(){
       socket.emit('chatmsg', document.getElementById('chatarea').value); 
       
       var d = new Date();
-      var chatmsg ='<li class="clearfix"><div class="chat-body clearfix" style="font-size:13px"><div class="header clearfix"><strong class="pull-right primary-font">'+user+'</strong></div><p class="text-left">'+document.getElementById('chatarea').value+'</p><small class="pull-right text-muted timespan"><span class="glyphicon glyphicon-time"> </span>'+ d.getHours()+':'+d.getMinutes() +'</small></div></li>';
+      var chatmsg ='<li class="clearfix"><div class="chat-body clearfix" style="font-size:16px"><div class="header clearfix"><strong class="pull-right primary-font">'+user+'</strong></div><p class="text-left">'+document.getElementById('chatarea').value+'</p><small class="pull-right text-muted timespan"><span class="glyphicon glyphicon-time"> </span>'+ d.getHours()+':'+d.getMinutes() +'</small></div></li>';
       
       $(".chat").append(chatmsg);
       $('#chatarea').val('');
@@ -143,7 +143,7 @@ socket.on('chatmsg', function(msg){
   clearTimeout(usertypingtimer); //cancel the previous timer.
   usertypingtimer = null;
   $('.typingstatus').html('');
-  var chatmsg ='<li class="clearfix"><div class="chat-body clearfix" style="font-size:13px"><div class="header clearfix"><strong class="primary-font pull-left" >'+msg.user+'</strong></div><p class="text-left">'+msg.msg+'</p><small class="pull-right text-muted timespan"><span class="glyphicon glyphicon-time"> </span>'+ d.getHours()+':'+d.getMinutes() +'</small></div></li>';
+  var chatmsg ='<li class="clearfix"><div class="chat-body clearfix" style="font-size:16px"><div class="header clearfix"><strong class="primary-font pull-left" >'+msg.user+'</strong></div><p class="text-left">'+msg.msg+'</p><small class="pull-right text-muted timespan"><span class="glyphicon glyphicon-time"> </span>'+ d.getHours()+':'+d.getMinutes() +'</small></div></li>';
   $(".chat").append(chatmsg);
   var scrolltoh = $('.panel-body')[0].scrollHeight;
   $('.panel-body').scrollTop(scrolltoh);

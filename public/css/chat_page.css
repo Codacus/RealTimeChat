@@ -73,7 +73,7 @@
 }
 
 .user_box{
-    background-color: rgba(255,255,255, 0.6);
+    background-color: rgba(255,255,255, 0.3);
     color:auto;
     overflow:auto;
 }
@@ -100,10 +100,6 @@
 }
 .userlist-container {
     background-color: rgba(255,255,255, 0.6);
-
-    border:solid 0px #7a7a7a;
-    
-
     border:solid 0px #7a7a7a;
     -moz-border-radius-topright:7px;
     -moz-border-radius-bottomright:7px;

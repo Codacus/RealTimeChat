@@ -16,18 +16,27 @@
         <script src="./js/app.js"></script>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row page-header">
-                <div class="col-md-3">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="row page-header">
+                <div class="col-md-offset-1 col-md-2">
                     <h3 class="h3"><img class="logo" src="./assets/favicon.png" alt="logo"> MKChat</h3>
                 </div>
-                <div class="col-md-7 form-inline">
+                <div class="col-md-6 form-inline" id="shareLink">
                     <label>Share link to invite:&nbsp;</label><input type="text" class="form-control" id="roompath" readonly>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                 <span class="user_span"></span>
                 </div>
             </div>
+            </div>
+        </nav>
+
+
+
+        <div class="container-fluid">
+            
             <div class="row chat-area">
                 <div class="col-md-2 empty-space"></div>
                 <div class="col-md-6 chat-container">

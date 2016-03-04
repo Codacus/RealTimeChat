@@ -80,7 +80,7 @@
 
 .chat-area {
     margin-right:0px;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .chat-area, .chat-container, .userlist-container, .user_box{

@@ -25,7 +25,7 @@
     overflow-y: scroll;
     height:92%;
     position:relative;
-    background-color: #fff;
+    background-color: rgba(255,255,255, 0.3);
 
     border:solid 1px #494d49;
     border-bottom: none;
@@ -101,6 +101,9 @@
 
 .chat-area, .chat-container, .userlist-container, .user_box{
     height:600px;
+}
+.userlist-container {
+    background-color: red;
 }
 
 .chat

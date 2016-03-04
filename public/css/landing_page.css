@@ -21,20 +21,6 @@ body{
 	padding:15px;
 }
 
-/*.jumbotron {
-	background: url(../assets/jumbo_pic.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index:1;
-	-webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
-
-}*/
 
 .background-image{
 	position:absolute;

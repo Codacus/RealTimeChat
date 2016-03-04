@@ -28,6 +28,7 @@
     background-color: #fff;
 
     border:solid 1px #494d49;
+    border-bottom: none;
     -moz-border-radius-topleft: 7px;
     -moz-border-radius-topright:7px;
     /*-moz-border-radius-bottomleft:5px;
@@ -38,8 +39,7 @@
     -webkit-border-bottom-right-radius:5px;*/
     border-top-left-radius:7px;
     border-top-right-radius:7px;
-    border-bottom-left-radius:7px;
-    border-bottom-right-radius:7px;
+    
 }
 
 .panel-footer{
@@ -94,6 +94,7 @@
 }
 
 .chat-area {
+    margin-top: 50px;
     margin-right:0px;
     /* background-color: white; */
 }

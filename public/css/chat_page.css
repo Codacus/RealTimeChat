@@ -1,25 +1,4 @@
-﻿@font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Montserrat";
-    font-weight: bold;
-    src: url(../fonts/Montserrat-Bold.ttf);
-}
-
-body{
-    font-family: "Montserrat", sans-serif;
-    background-color: #FDFFFC;
-    background:url(../assets/jumbo_pic.jpg) no-repeat fixed top;
-    background-size:cover;
-}
-
-.navbar-default {
-    background-color: #FDFFFC;
-}
-
+﻿
 
 
 .page-header {
@@ -81,7 +60,7 @@ body{
 }
 
 .user_box{
-    background-color:#lightgreen;
+    background-color:white;
     color:auto;
     overflow:auto;
 }
@@ -101,6 +80,7 @@ body{
 
 .chat-area {
     margin-right:0px;
+    background-color: white;
 }
 
 .chat-area, .chat-container, .userlist-container, .user_box{
@@ -138,7 +118,7 @@ body{
 }
 
 .modal-body{
-    background-color:green;
+    background-color:#FDFFFC;
     color:white;
     height:auto;
 }
@@ -154,21 +134,60 @@ body{
     padding-bottom: 40px;
 }
 
-/*
-::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
+
+
+/* MARIA CHANGES */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
 }
 
-::-webkit-scrollbar
-{
-    width: 12px;
-    background-color: #F5F5F5;
+@font-face {
+    font-family: "Montserrat";
+    font-weight: bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
 }
 
-::-webkit-scrollbar-thumb
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;
-}*/
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #FDFFFC;
+    background:url(../assets/blurbg_3.jpg) no-repeat fixed top;
+    background-size:cover;
+}
+
+.navbar-default {
+    background-color: #FDFFFC;
+}
+
+
+#enterName {
+    text-align: center;
+}
+
+#modalInput {
+    height: 50px;
+    background-color: rgba(255,255,255,0.6) !important;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.modal-header {
+    background-color: rgba(0,153,76,0.8);
+}
+
+
+
+.EnterRoom {
+    height: 50px;
+
+    /*width: 100px !important;*/
+    background-color: rgba(0,153,76,0.8) !important;
+}
+
+
+#nameModal {
+    /*backdrop modal color*/
+    background-color: rgba(16, 37, 11, 0.4);
+}
+

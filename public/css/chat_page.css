@@ -155,11 +155,10 @@
 
 .glyphicon-user{
     z-index:-1;
-    width:75%;
+/*    width:75%;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
+    transform: translateY(-50%);*/
 }
 
 /* MARIA CHANGES */

@@ -94,9 +94,9 @@
 }
 
 .chat-area {
-    margin-top: 50px;
-    margin-right:0px;
-    /* background-color: white; */
+    margin:50px 40px 0 60px;
+    
+    
 }
 
 .chat-area, .chat-container, .userlist-container, .user_box{

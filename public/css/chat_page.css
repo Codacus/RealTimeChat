@@ -1,7 +1,4 @@
-﻿
-
-
-.page-header {
+﻿.page-header {
     margin-top:0px;
     margin-bottom:0px;  
     padding:20px 10px 20px 10px;
@@ -156,7 +153,14 @@
     padding-bottom: 40px;
 }
 
-
+.glyphicon-user{
+    z-index:-1;
+    width:75%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
 
 /* MARIA CHANGES */
 

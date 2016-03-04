@@ -20,25 +20,20 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="row page-header">
-                <div class="col-md-offset-1 col-md-2">
-                    <h3 class="h3"><img class="logo" src="./assets/favicon.png" alt="logo"> MKChat</h3>
+                    <div class="col-md-offset-1 col-md-2">
+                        <h3 class="h3"><img class="logo" src="./assets/favicon.png" alt="logo"> MKChat</h3>
+                    </div>
+                    <div class="col-md-6 form-inline" id="shareLink">
+                        <label>Share link to invite:&nbsp;</label><input type="text" class="form-control" id="roompath" readonly>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="user_span"></span>
+                    </div>
                 </div>
-                <div class="col-md-6 form-inline" id="shareLink">
-                    <label>Share link to invite:&nbsp;</label><input type="text" class="form-control" id="roompath" readonly>
-                </div>
-                <div class="col-md-3">
-                <span class="user_span"></span>
-                </div>
-            </div>
             </div>
         </nav>
-
-
-
         <div class="container">
-            
             <div class="row chat-area">
-                
                 <div class="col-md-8 chat-container">
                     <div class="panel-body">
                         <ul class="chat">
@@ -57,7 +52,9 @@
                         </div>
                         <div class="user_list"></div>
                     </div>
-                    <span class="glyphicon glyphicon-user"></span>
+                    <div style="display:flex;justify-content:center;align-items:center;">
+                        <div> <span class="glyphicon glyphicon-user"></span></div>
+                    </div>
                 </div>
             </div>
         </div>

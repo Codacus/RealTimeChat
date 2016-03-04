@@ -25,18 +25,16 @@
     overflow-y: scroll;
     height:92%;
     position:relative;
-    background-color: rgba(255,255,255, 0.3);
+    background-color: rgba(255,255,255, 0.6);
 
-    border:solid 1px #494d49;
+    border:solid 0px #7a7a7a;
     border-bottom: none;
     -moz-border-radius-topleft: 7px;
     -moz-border-radius-topright:7px;
-    /*-moz-border-radius-bottomleft:5px;
-    -moz-border-radius-bottomright:5px;*/
+    
     -webkit-border-top-left-radius:7px;
     -webkit-border-top-right-radius:7px;
-    /*-webkit-border-bottom-left-radius:5px;
-    -webkit-border-bottom-right-radius:5px;*/
+    
     border-top-left-radius:7px;
     border-top-right-radius:7px;
     
@@ -75,7 +73,7 @@
 }
 
 .user_box{
-    background-color:white;
+    background-color: rgba(255,255,255, 0.6);
     color:auto;
     overflow:auto;
 }
@@ -85,9 +83,7 @@
     width:100%;
 }
 
-.h4{
-    /*color:green;*/
-}
+
 
 #roompath{
     width:60%;
@@ -103,7 +99,7 @@
     height:600px;
 }
 .userlist-container {
-    background-color: red;
+    background-color: rgba(255,255,255, 0.6);
 }
 
 .chat

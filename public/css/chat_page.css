@@ -259,6 +259,9 @@ input[type=text]:focus, textarea[type=text]:focus {
     .userbg {
         font-size: 200px;
     }
+    #userTabPhone {
+    display:none;
+}
 }
 
 

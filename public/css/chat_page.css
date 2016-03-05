@@ -208,8 +208,8 @@ body{
 
 }
 
-html {
-    height: 150%;
+body {
+    height: 100%;
 }
 
 .header-default {

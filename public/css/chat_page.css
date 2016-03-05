@@ -264,7 +264,12 @@ input[type=text]:focus, textarea[type=text]:focus {
 }
 
 }
+@media(min-width: 1200px){
+        #userTabPhone {
+    display:none;
+}
 
+}
 
 @media(max-width: 990px){
     #userWideIcon{

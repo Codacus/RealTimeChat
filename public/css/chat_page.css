@@ -247,8 +247,6 @@ input[type=text]:focus, textarea[type=text]:focus {
 }
 
 
-}
-
 #userTabPhone {
     display:none;
 }
@@ -259,17 +257,8 @@ input[type=text]:focus, textarea[type=text]:focus {
     .userbg {
         font-size: 200px;
     }
-    #userTabPhone {
-    display:none;
 }
 
-}
-@media(min-width: 1200px){
-        #userTabPhone {
-    display:none;
-}
-
-}
 
 @media(max-width: 990px){
     #userWideIcon{

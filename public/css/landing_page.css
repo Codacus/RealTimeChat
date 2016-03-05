@@ -172,19 +172,38 @@ footer {
 	}
 
 	.invite {
-		width: 350px !important;
+		width: 250px !important;
 	}
-
-	.invite input[type=text] {
-		color:black !important;
-	}
-
 
 	.copyroomurl[placeholder] {
-		font-size: 12px;
+		font-size: 8px;
 		color:black !important;
 		padding-left: 3px !important;
 	}
+
+	.invite {
+		height: 45px;
+	}
+
+	.invite input {
+		height: 45px;
+		color:black !important;
+	}
+
+	.invite input[type=text] {
+		padding-left: 3px !important;
+		color:black !important;
+	}
+
+	.enter {
+		height: 45px;
+		width: 60px !important;
+		background-color: rgba(0,153,76,0.8) !important;
+		font-size: 13px;
+		/*padding-right: 5px;*/
+		
+	}
+
 
 
 	::-webkit-input-placeholder { /* WebKit, Blink, Edge */

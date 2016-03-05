@@ -196,17 +196,21 @@ footer {
 	}
 
 	.copyroomurl[placeholder] {
-		font-size: 10px;
+		font-size: 9px;
+	}
+
+	.invite {
+		height: 45px;
 	}
 
 	.invite input {
 	height: 45px;
-}
+	}
 
-.enter {
-	height: 45px;
-	width: 80px !important;
-	background-color: rgba(0,153,76,0.8) !important;
-	font-size: 13px;
-}
+	.enter {
+		height: 45px;
+		width: 70px !important;
+		background-color: rgba(0,153,76,0.8) !important;
+		font-size: 13px;
+	}
 }

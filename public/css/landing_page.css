@@ -175,8 +175,10 @@ footer {
 		width: 350px !important;
 	}
 
+
 	.copyroomurl[placeholder] {
 		font-size: 12px;
+		color:black;
 	}
 }
 
@@ -197,6 +199,7 @@ footer {
 
 	.copyroomurl[placeholder] {
 		font-size: 9px;
+		color:black;
 	}
 
 	.invite {
@@ -205,7 +208,7 @@ footer {
 
 	.invite input {
 		height: 45px;
-		color:black;
+		color:black !important;
 	}
 
 	.enter {

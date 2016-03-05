@@ -266,7 +266,14 @@ input[type=text]:focus, textarea[type=text]:focus {
     }
 
     #userTabPhone {
-        display:inline-block;
+        display:block;
+        float:left;
+        margin-right:5px;
+        margin-top: 10px;
+    }
+
+    .h4 {
+        float:left;
     }
     
 }
@@ -278,7 +285,35 @@ input[type=text]:focus, textarea[type=text]:focus {
     }
 
     #userTabPhone {
-        display:inline-block;
+        display:block;
+        float:left;
+        margin-right:5px;
+        margin-top: 10px;
+    }
+
+    .h4 {
+        font-size: 14px;
+        float:left;
+    }
+    
+}
+
+@media(max-width: 320px){
+
+    #userWideIcon{
+        display:none;
+    }
+
+    #userTabPhone {
+        display:block;
+        float:left;
+        margin-right:5px;
+        margin-top: 10px;
+    }
+
+    .h4 {
+        font-size: 10px;
+        float:left;
     }
     
 }

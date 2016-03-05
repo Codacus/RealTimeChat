@@ -255,7 +255,7 @@ footer {
 	}
 
 	.invite input[type=text] {
-		padding-left: 3px !important;
+		/*padding-left: 3px !important;*/
 		color:black !important;
 	}
 

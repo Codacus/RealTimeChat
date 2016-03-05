@@ -198,11 +198,14 @@
     src: url(../fonts/Montserrat-Bold.ttf);
 }
 
-body{
+html{
     font-family: "Montserrat", sans-serif;
     background-color: #FDFFFC;
-    background:url(../assets/blurbg_3.jpg) no-repeat fixed top;
-    background-size:cover;
+    background:url(../assets/blurbg_3.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header-default {
@@ -328,6 +331,9 @@ input[type=text]:focus, textarea[type=text]:focus {
     .form-inline label{
         display: inline-block;
         font-size: 10px;
+    }
+    body {
+
     }
 }
 

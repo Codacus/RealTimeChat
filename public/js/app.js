@@ -54,7 +54,7 @@ $(function(){
     //Validate name removing extra spaces and check for length and special characters.
     if(user!="" && !(/[^A-Za-z0-9 ]/.test(user)) && user.length>3){ 
       $("#nameModal").modal('hide');
-      $(".user_span").html("<h5 class='h5' style='color:auto'>Hello <b><u>" + user + "</u></b></h4>" );
+      $(".user_span").html("<h5 class='h5' style='color:auto'>Hello <b>" + user + " !</b></h4>" );
       socket.emit('addToRoom',{'room':myroom, 'user':user});
       $("#roompath").val(window.location);
      
@@ -164,7 +164,7 @@ socket.on('user_connect', function(users_array){
   
   for(var i=0; i<users_array.length;i++){
     if(users_array[i][0] !== user)
-      $(".user_list").append('<div class="btn-group pull-right rm_'+users_array[i][0]+'_div" style="padding: 5px 5px 5px 5px;width:100%">'+users_array[i][0]+'</div>');
+      $(".user_list").append('<span class="glyphicon glyphicon-record"></span><div class="btn-group pull-right rm_'+users_array[i][0]+'_div" style="padding: 5px 5px 5px 5px;width:100%">'+users_array[i][0]+'</div>');
   }
 });
 

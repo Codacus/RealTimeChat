@@ -205,7 +205,7 @@ body{
     background-size:cover;
 }
 
-.navbar-default {
+.header-default {
     background-color: #FDFFFC;
 }
 
@@ -297,6 +297,35 @@ input[type=text]:focus, textarea[type=text]:focus {
     
 }
 
+
+@media(max-width: 785px){
+    .logo{
+        width:25px;
+        height: 25px;
+    }
+
+    .h3 {
+        font-size: 14px;
+    }
+
+    .h5 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    #roompath {
+        display: inline-block;
+        font-size:9px;
+        height:22px;
+        width:50%;
+    }
+    .form-inline label{
+        display: inline-block;
+        font-size: 10px;
+    }
+}
+
+
 @media(max-width: 500px){
 
     #userWideIcon{
@@ -310,9 +339,22 @@ input[type=text]:focus, textarea[type=text]:focus {
         margin-top: 10px;
     }
 
+    .h3{
+        margin-top: 5px;
+    }
+
     .h4 {
         font-size: 14px;
         float:left;
+    }
+
+    .h5{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    #roompath{
+        width: 100%;
     }
 
     .userbg{display:none;}

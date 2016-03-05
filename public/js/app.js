@@ -16,7 +16,13 @@ $(function(){
   // Handler for copying invite url on click
   $('#roompath').on('click', function(){
     this.select();
-    document.execCommand('copy');
+    try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
   });
 
   // Handler for chat send on pressing enter key.

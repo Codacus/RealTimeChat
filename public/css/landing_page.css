@@ -46,8 +46,12 @@ body{
 
 .jumbo-p {
 	text-align: center;
-	 line-height: 80%;
+	 line-height: 150%;
 	 color:#333300;
+}
+
+#parbox {
+	padding: 20px 0 20px 0;
 }
 
 #mkchat{
@@ -120,4 +124,37 @@ footer {
 	height: 50px;
 	font-size: 15px;
 	line-height: 20px;
+}
+
+
+/*=============== MEDIA QUERIES =====================*/
+
+@media(max-width: 1200px){
+	/*body{
+		display:none;
+	}*/
+}
+
+@media(max-width: 991px){
+	/*body{
+		display:none;
+	}*/
+}
+
+@media(min-width: 768px) and (max-width: 990px){
+	/*body{
+		display:none;
+	}*/
+}
+
+@media(min-width: 768px){
+	/*body{
+		display:none;
+	}*/
+}
+
+@media(max-width: 500px){
+	/*body{
+		display:none;
+	}*/
 }

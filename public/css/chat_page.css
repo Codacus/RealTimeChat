@@ -120,6 +120,18 @@
     border-bottom: 1px dotted #B3A9A9;
 }
 
+.chat-body{
+    font-size:16px;
+}
+
+.glyphicon-time{
+    margin-right: 2px;
+}
+
+.timeText{
+    font-size: 9px;
+}
+
 .chat li.left .chat-body
 {
     margin-left: 60px;

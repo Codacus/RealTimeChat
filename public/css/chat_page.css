@@ -255,7 +255,7 @@ input[type=text]:focus, textarea[type=text]:focus {
 
 @media(max-width: 1200px){
     .userbg {
-        font-size: 65px;
+        font-size: 200px;
     }
 }
 

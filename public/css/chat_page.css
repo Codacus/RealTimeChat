@@ -386,7 +386,7 @@ input[type=text]:focus, textarea[type=text]:focus {
        transform: translateX(-21.65%);
     }
     .userlist-container {
-        transform: translateX(-2%);
+        transform: translateX(-3%);
     }
 }
 

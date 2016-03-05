@@ -286,8 +286,13 @@ input[type=text]:focus, textarea[type=text]:focus {
     .userlist-container{
         height:280px !important;
         margin-top: 20px;
+        margin-bottom: 20px;
 
         overflow-y:scroll;
+    }
+
+    #chatarea {
+        height:80px;
     }
     
 }
@@ -320,8 +325,13 @@ input[type=text]:focus, textarea[type=text]:focus {
     .userlist-container{
         height:280px !important;
         margin-top: 20px;
+        margin-bottom: 20px;
 
         overflow-y:scroll;
+    }
+
+    #chatarea {
+        height:80px;
     }
     
 }
@@ -354,8 +364,11 @@ input[type=text]:focus, textarea[type=text]:focus {
     .userlist-container{
         height:280px !important;
         margin-top: 20px;
+        margin-bottom: 20px;
 
         overflow-y:scroll;
     }
-    
+    #chatarea {
+        height:80px;
+    }
 }

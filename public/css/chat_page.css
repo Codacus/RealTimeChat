@@ -47,10 +47,6 @@
     border-radius:0px 0px 0px 0px;
 }
 
-.panel-footer {
-    background-color: rgba(255,255,255, 0.5) !important;
-}
-
 .panel-footer div {
     position:absolute;
     top:-50%;
@@ -82,8 +78,6 @@
     padding: 5px 5px 5px 5px;
     width:100%;
 }
-
-
 
 #roompath{
     width:60%;
@@ -392,9 +386,6 @@ input[type=text]:focus, textarea[type=text]:focus {
     .chat-container {
        width: 160%;
        transform: translateX(-21.65%);
-    }
-    .userlist-container {
-        transform: translateX(-3%);
     }
 }
 

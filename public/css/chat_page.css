@@ -47,6 +47,10 @@
     border-radius:0px 0px 0px 0px;
 }
 
+.panel-footer {
+    background-color: rgba(255,255,255, 0.5) !important;
+}
+
 .panel-footer div {
     position:absolute;
     top:-50%;
@@ -204,7 +208,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    background:url(../assets/blurbg_3.jpg) no-repeat center;
+    background:url(../assets/blurbg_3.jpg) no-repeat bottom;
 }
 
 .header-default {
@@ -248,8 +252,7 @@ input[type=text]:focus, textarea[type=text]:focus {
   border: 1px solid rgba(0, 153, 76, 0.8);
 }
 
-#chatarea{
-    background-color: rgba(255,255,255,0.5);
+
 }
 
 #userTabPhone {

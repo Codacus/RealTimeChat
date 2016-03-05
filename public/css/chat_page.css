@@ -253,6 +253,13 @@ input[type=text]:focus, textarea[type=text]:focus {
 
 /* ================ MEDIA QUERIES ====================== */
 
+@media(max-width: 1200px){
+    .userbg {
+        font-size: 65px;
+    }
+}
+
+
 @media(max-width: 990px){
     #userWideIcon{
         display:none;

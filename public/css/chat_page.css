@@ -385,6 +385,9 @@ input[type=text]:focus, textarea[type=text]:focus {
        width: 160%;
        transform: translateX(-21.65%);
     }
+    .userlist-container {
+        transform: translateX(-2%);
+    }
 }
 
 @media(max-width: 320px){

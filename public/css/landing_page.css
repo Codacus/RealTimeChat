@@ -175,11 +175,34 @@ footer {
 		width: 350px !important;
 	}
 
+	.invite input[type=text] {
+		color:black !important;
+	}
+
 
 	.copyroomurl[placeholder] {
 		font-size: 12px;
-		color:black;
+		color:black !important;
+		padding-left: 3px !important;
 	}
+
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:black !important;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:black;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:black;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color:black;
+	}
+	:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	  color:black !important;
+	}
+
 }
 
 @media(max-width: 320px){
@@ -198,8 +221,9 @@ footer {
 	}
 
 	.copyroomurl[placeholder] {
-		font-size: 9px;
-		color:black;
+		font-size: 8px;
+		color:black !important;
+		padding-left: 3px !important;
 	}
 
 	.invite {
@@ -211,6 +235,11 @@ footer {
 		color:black !important;
 	}
 
+	.invite input[type=text] {
+		padding-left: 3px !important;
+		color:black !important;
+	}
+
 	.enter {
 		height: 45px;
 		width: 60px !important;
@@ -218,5 +247,23 @@ footer {
 		font-size: 13px;
 		padding-right: 5px;
 		
+	}
+
+
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:black !important;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:black;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:black;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color:black;
+	}
+	:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	  color:black !important;
 	}
 }

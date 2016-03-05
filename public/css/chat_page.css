@@ -433,8 +433,4 @@ input[type=text]:focus, textarea[type=text]:focus {
     #chatarea {
         height:80px;
     }
-    .chat-container {
-       width: 160%;
-       transform: translateX(-21.65%);
-   }
 }

@@ -276,7 +276,9 @@ input[type=text]:focus, textarea[type=text]:focus {
         float:left;
     }
 
-    .userlist-container, .user_box, .userbg, .userlist {
+    .userbg{display:none;}
+
+    .userlist-container, .user_box, .userlist {
         height:280px !important;
         /*overflow-y:scroll;*/
     }
@@ -308,7 +310,9 @@ input[type=text]:focus, textarea[type=text]:focus {
         float:left;
     }
 
-    .userlist-container, .user_box, .userbg, .userlist {
+    .userbg{display:none;}
+
+    .userlist-container, .user_box, .userlist {
         height:280px !important;
         /*overflow-y:scroll;*/
     }
@@ -340,7 +344,9 @@ input[type=text]:focus, textarea[type=text]:focus {
         float:left;
     }
 
-    .userlist-container, .user_box, .userbg, .userlist {
+    .userbg{display:none;}
+
+    .userlist-container, .user_box, .userlist {
         height:280px !important;
         /*overflow-y:scroll;*/
     }

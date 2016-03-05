@@ -172,7 +172,7 @@ footer {
 	}
 
 	.invite {
-		width: 250px !important;
+		width: 280px !important;
 	}
 
 	.copyroomurl[placeholder] {
@@ -191,13 +191,13 @@ footer {
 	}
 
 	.invite input[type=text] {
-		padding-left: 3px !important;
+		/*padding-left: 3px !important;*/
 		color:black !important;
 	}
 
 	.enter {
 		height: 45px;
-		width: 60px !important;
+		width: 75px !important;
 		background-color: rgba(0,153,76,0.8) !important;
 		font-size: 13px;
 		/*padding-right: 5px;*/

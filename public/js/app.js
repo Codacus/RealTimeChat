@@ -13,6 +13,11 @@ $(function(){
     Different Event Handlers Code.
   */
 
+  // Handler for copying invite url on click
+  $('#roompath').on('click', function(){
+    this.select();
+    document.execCommand('copy');
+  });
 
   // Handler for chat send on pressing enter key.
 

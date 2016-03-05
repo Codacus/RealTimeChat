@@ -126,15 +126,11 @@
 
 .glyphicon-time{
    margin-right: 2px;
-   font-size: 16px !important;
+   font-size: 15px !important;
 }
 
 .timespan{
-    font-size: 14px;
-}
-
-.timeText{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .chat li.left .chat-body

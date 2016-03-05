@@ -52,6 +52,7 @@ body{
 
 #parbox {
 	padding: 20px 0 20px 0;
+
 }
 
 #mkchat{
@@ -144,17 +145,37 @@ footer {
 @media(min-width: 768px) and (max-width: 990px){
 	/*body{
 		display:none;
-	}*/
+	}
+	*/
 }
 
-@media(min-width: 768px){
+
+@media(min-width: 500px) and (max-width: 768px){
 	/*body{
 		display:none;
 	}*/
+
+	#parbox{
+		background-color: rgba(255,255,255,0.6);
+	}
 }
 
 @media(max-width: 500px){
 	/*body{
 		display:none;
 	}*/
+
+	#parbox{
+		background-color: rgba(255,255,255,0.6);
+		border: 0px solid;
+		border-radius: 7px;
+	}
+
+	.invite {
+		width: 370px !important;
+	}
+
+	.copyroomurl[placeholder] {
+		font-size: 12px;
+	}
 }

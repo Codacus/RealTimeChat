@@ -294,12 +294,6 @@ input[type=text]:focus, textarea[type=text]:focus {
     #chatarea {
         height:80px;
     }
-    
-    .chat-container {
-       width: 160%;
-transform: translateX(-21.65%);
-margin-top: -5%;
-    }
 
     .userlist-container{
         border-top-right-radius: 7px;
@@ -424,5 +418,10 @@ margin-top: -5%;
     }
     #chatarea {
         height:80px;
+    }
+        .chat-container {
+       width: 160%;
+transform: translateX(-21.65%);
+margin-top: -5%;
     }
 }

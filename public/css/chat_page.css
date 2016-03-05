@@ -245,3 +245,26 @@ input[type=text]:focus, textarea[type=text]:focus {
   box-shadow: 0 0 1px rgba(0, 153, 76, 0.8);
   border: 1px solid rgba(0, 153, 76, 0.8);
 }
+
+
+#userTabPhone {
+    display:none;
+}
+
+/* ================ MEDIA QUERIES ====================== */
+
+@media(max-width: 990px){
+    
+}
+
+@media(max-width: 500px){
+
+    #userWideIcon{
+        display:none;
+    }
+
+    #userTabPhone {
+        display:inline-block;
+    }
+    
+}

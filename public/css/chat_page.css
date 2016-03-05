@@ -204,6 +204,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
     background:url(../assets/blurbg_3.jpg) no-repeat top;
 }
 

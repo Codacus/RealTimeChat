@@ -236,13 +236,13 @@ footer {
 	}
 
 	.invite {
-		width: 270px !important;
+		width: 250px !important;
 	}
 
 	.copyroomurl[placeholder] {
 		font-size: 8px;
 		color:black !important;
-		padding-left: 3px !important;
+		/*padding-left: 3px !important;*/
 	}
 
 	.invite {

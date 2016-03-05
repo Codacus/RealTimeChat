@@ -153,16 +153,15 @@
     padding-bottom: 40px;
 }
 
-/*.glyphicon-user{
+.userbg{
+    transform: translateY(-100%); 
+    opacity:0.2; 
+    font-size:300px;
+    height:100%;
     display:flex;
     justify-content:center;
     align-items:center;
-    z-index:-1;
-    width:75%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}*/
+}
 
 /* MARIA CHANGES */
 

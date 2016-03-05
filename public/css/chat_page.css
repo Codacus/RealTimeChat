@@ -259,6 +259,10 @@ input[type=text]:focus, textarea[type=text]:focus {
     .userbg {
         font-size: 200px;
     }
+    #userTabPhone {
+    display:none;
+}
+
 }
 
 
@@ -305,7 +309,7 @@ input[type=text]:focus, textarea[type=text]:focus {
 
 }
 
-/*
+
 @media(max-width: 785px){
     .logo{
         width:25px;
@@ -331,7 +335,7 @@ input[type=text]:focus, textarea[type=text]:focus {
         display: inline-block;
         font-size: 10px;
     }
-}*/
+}
 
 
 @media(max-width: 500px){

@@ -204,13 +204,14 @@ footer {
 	}
 
 	.invite input {
-	height: 45px;
+		height: 45px;
 	}
 
 	.enter {
 		height: 45px;
-		width: 70px !important;
+		width: 60px !important;
 		background-color: rgba(0,153,76,0.8) !important;
 		font-size: 13px;
+		text-align: center;
 	}
 }

@@ -198,7 +198,7 @@
     src: url(../fonts/Montserrat-Bold.ttf);
 }
 
-html{
+body{
     font-family: "Montserrat", sans-serif;
     background-color: #FDFFFC;
     background:url(../assets/blurbg_3.jpg) no-repeat center center fixed;
@@ -206,7 +206,7 @@ html{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 1;
+
 }
 
 .header-default {

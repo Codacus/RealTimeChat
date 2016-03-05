@@ -295,6 +295,11 @@ input[type=text]:focus, textarea[type=text]:focus {
         height:80px;
     }
     
+    .chat-container {
+       width: 130%;
+       transform: translateX(-14%);
+    }
+
 }
 
 

@@ -296,8 +296,15 @@ input[type=text]:focus, textarea[type=text]:focus {
     }
     
     .chat-container {
-       width: 130%;
-       transform: translateX(-14%);
+       width: 160%;
+transform: translateX(-21.65%);
+margin-top: -5%;
+    }
+
+    .userlist-container{
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 0px;
     }
 
 }

@@ -24,7 +24,7 @@ $(function(){
       socket.emit('chatmsg', document.getElementById('chatarea').value); 
       
       var d = new Date();
-      var chatmsg ='<li class="clearfix"><div class="chat-body clearfix"><div class="header clearfix"><strong class="pull-right primary-font">'+user+'</strong></div><p class="text-left">'+document.getElementById('chatarea').value+'</p><small class="pull-right text-muted timespan"><span class="glyphicon glyphicon-time"> </span><div class="timeText">'+ d.getHours()+':'+d.getMinutes() +'</div></small></div></li>';
+      var chatmsg ='<li class="clearfix"><div class="chat-body clearfix"><div class="header clearfix"><strong class="pull-right primary-font">'+user+'</strong></div><p class="text-left">'+document.getElementById('chatarea').value+'</p><small class="pull-right text-muted timespan"><span class="glyphicon glyphicon-time"></span><div class="timeText">'+d.getHours()+':'+d.getMinutes()+'</div></small></div></li>';
       
       $(".chat").append(chatmsg);
       $('#chatarea').val('');

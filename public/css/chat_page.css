@@ -126,6 +126,11 @@
 
 .glyphicon-time{
    margin-right: 2px;
+   font-size: 16px !important;
+}
+
+.timespan{
+    font-size: 14px;
 }
 
 .timeText{

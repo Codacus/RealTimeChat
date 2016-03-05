@@ -208,9 +208,7 @@ body{
 
 }
 
-html, body {
-    min-height: 100%;
-}
+body { height: 100vh }
 
 .header-default {
     background-color: #FDFFFC;

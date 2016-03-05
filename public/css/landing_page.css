@@ -179,3 +179,23 @@ footer {
 		font-size: 12px;
 	}
 }
+
+@media(max-width: 320px){
+	/*body{
+		display:none;
+	}*/
+
+	#parbox{
+		background-color: rgba(255,255,255,0.6);
+		border: 0px solid;
+		border-radius: 7px;
+	}
+
+	.invite {
+		width: 250px !important;
+	}
+
+	.copyroomurl[placeholder] {
+		font-size: 10px;
+	}
+}

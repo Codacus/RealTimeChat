@@ -200,15 +200,14 @@
 body{
     font-family: "Montserrat", sans-serif;
     background-color: #FDFFFC;
-    background:url(../assets/blurbg_3.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+    background:url(../assets/blurbg_3.jpg) no-repeat center center fixed;
 }
 
-body { height: 100vh }
+/*body { height: 100vh }*/
 
 .header-default {
     background-color: #FDFFFC;

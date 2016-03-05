@@ -205,6 +205,7 @@ footer {
 
 	.invite input {
 		height: 45px;
+		color:black;
 	}
 
 	.enter {
@@ -212,6 +213,7 @@ footer {
 		width: 60px !important;
 		background-color: rgba(0,153,76,0.8) !important;
 		font-size: 13px;
-		text-align: center;
+		padding-right: 5px;
+		
 	}
 }

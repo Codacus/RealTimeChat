@@ -248,7 +248,7 @@ input[type=text]:focus, textarea[type=text]:focus {
   border: 1px solid rgba(0, 153, 76, 0.8);
 }
 
-#roompath{
+#chatarea{
     background-color: rgba(255,255,255,0.5);
 }
 

@@ -164,7 +164,7 @@ socket.on('user_connect', function(users_array){
   
   for(var i=0; i<users_array.length;i++){
     if(users_array[i][0] !== user)
-      $(".user_list").append('<span class="glyphicon glyphicon-record"></span><div class="btn-group pull-right rm_'+users_array[i][0]+'_div" style="padding: 5px 5px 5px 5px;width:100%">'+users_array[i][0]+'</div>');
+      $(".user_list").append('<div class="pull-right rm_'+users_array[i][0]+'_div" style="padding: 5px 5px 5px 5px;width:100%"><span class="glyphicon glyphicon-record"></span> '+users_array[i][0]+'</div>');
   }
 });
 

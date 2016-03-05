@@ -50,7 +50,6 @@
 .panel-footer div {
     position:absolute;
     top:-50%;
-    z-index:20;
     margin:0 auto;
     width:100%;
     border-top:#ddd; 
@@ -201,7 +200,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     background-color: #FDFFFC;
-    background:url(../assets/blurbg_3.jpg) no-repeat center scroll;
+    background:url(../assets/blurbg_3.jpg) no-repeat top fixed;
       -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -259,9 +259,6 @@ input[type=text]:focus, textarea[type=text]:focus {
     .userbg {
         font-size: 200px;
     }
-    #userTabPhone {
-    display:none;
-}
 }
 
 
@@ -386,10 +383,10 @@ input[type=text]:focus, textarea[type=text]:focus {
     #chatarea {
         height:80px;
     }
-    .chat-container {
+/*    .chat-container {
        width: 160%;
        transform: translateX(-21.65%);
-    }
+    }*/
 }
 
 @media(max-width: 320px){

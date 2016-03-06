@@ -433,4 +433,8 @@ input[type=text]:focus, textarea[type=text]:focus {
     #chatarea {
         height:80px;
     }
+
+    body {
+        background-position: center;
+    }
 }

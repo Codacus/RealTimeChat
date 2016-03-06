@@ -27,7 +27,7 @@ $(function(){
 
   // Handler for chat send on pressing enter key.
 
-  $('#chatarea').keypress(function(e) {
+  $('#chatarea').keydown(function(e) {
     if (e.keyCode == 13 && !e.shiftKey && document.getElementById('chatarea').value !=="") {
       
       e.preventDefault();

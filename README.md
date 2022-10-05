@@ -1,6 +1,6 @@
 # README #
 
-The project has been uploaded on heroku and it will be updated frequently. 
+The project has been uploaded on heroku
 
 You can find it here:
 https://mkchat-codacus.herokuapp.com
